@@ -24,7 +24,8 @@ A jQuery flowing effect plugin.
 
 				// or with options
 				$(".my-class or #my-id").rlSmooth('slide',{
-					y: 0, 		// ms default settings for vertical window position
+					in: 0, 		// pixel default settings for vertical window position to show
+					out: 0,     // pixel default settings for vertical window position to hide
 					on: 500, 	// ms default settings effect speed
 					off: 500 	// ms default settings effect speed
 				});
