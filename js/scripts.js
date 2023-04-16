@@ -1,39 +1,50 @@
 $(function() {
 
-  $(".slide-option").rlSmooth();
+  $(".slide-option").rlSmooth('slide', {
+    in: 0,
+
+  });
 
   $(".slideOut-option").rlSmooth('slideOut',{
-  	y: 1700,
+  	in: 1700,
+    out: 1800,
   	on: 1000,
   	off: 800
   });
 
   $(".slideHide-option").rlSmooth('slideHide',{
-  	y: 1900
+  	in: 1900,
+    out: 2100
   });
 
   $(".fade-option").rlSmooth('fade',{
-    y: 500
+    in: 500,
+    out: 800
   });
 
   $(".fadeUp-option").rlSmooth('fadeUp',{
-    y: 700
+    in: 700,
+    out: 1000
   });
 
   $(".fadeHide-option").rlSmooth('fadeHide',{
-    y: 900
+    in: 900,
+    out: 1300
   });
 
   $(".showHide-option").rlSmooth('showHide',{
-    y: 1100
+    in: 1100,
+    out: 1800
   });
 
   $(".showUp-option").rlSmooth('showUp',{
-    y: 1300
+    in: 1300,
+    out: 1500
   });
 
   $(".showOut-option").rlSmooth('showOut',{
-    y: 1500
+    in: 1500,
+    out: 2100
   });
 
 });

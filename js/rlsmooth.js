@@ -1,11 +1,12 @@
 /*
-* Author: Rodrigo Ludgero http://rodrigoludgero.com/
+* Author: Rodrigo Ludgero http://rodrigoludgero.com/ $ Joe Szalai https://www.joeszalai.org
 *
 * Description: A jQuery flowing effect plugin
 *
 * License: MIT licensed
 *
-* Project: jQuery rlSmooth Plugin https://github.com/Rodrigo-Ludgero
+* Project: jQuery rlSmooth Plugin https://github.com/JoeSz/rlsmooth
+* Forked: https://github.com/Rodrigo-Ludgero
 *
 *
 */
@@ -18,7 +19,8 @@
 
 		var settings = $.extend({
 
-			y: 0, //ms default settings for vertical window position
+			in: 0, //pixel default settings for vertical window position to in
+			out: $(document).height(), //pixel default settings for vertical window position to out
 			on: 500, // ms default settings effect speed
 			off: 500 // ms default settings effect speed
 
@@ -31,7 +33,7 @@
 
 					$(window).scroll(function() {
 
-						if ($(window).scrollTop() > settings.y) {
+						if ($(window).scrollTop() > settings.in && $(window).scrollTop() < settings.out) {
 							$this.slideDown(settings.on);
 						}
 						else {
@@ -48,7 +50,7 @@
 
 					$(window).scroll(function() {
 
-						if ($(window).scrollTop() > settings.y) {
+						if ($(window).scrollTop() > settings.in && $(window).scrollTop() < settings.out) {
 							$this.slideDown(settings.on);
 						}
 						else {
@@ -65,7 +67,7 @@
 
 					$(window).scroll(function() {
 
-						if ($(window).scrollTop() > settings.y) {
+						if ($(window).scrollTop() > settings.in && $(window).scrollTop() < settings.out) {
 							$this.slideDown(settings.on);
 						}
 						else {
@@ -82,7 +84,7 @@
 
 					$(window).scroll(function() {
 
-						if ($(window).scrollTop() > settings.y) {
+						if ($(window).scrollTop() > settings.in && $(window).scrollTop() < settings.out) {
 							$this.slideDown(settings.on);
 						}
 						else {
@@ -99,7 +101,7 @@
 
 					$(window).scroll(function() {
 
-						if ($(window).scrollTop() > settings.y) {
+						if ($(window).scrollTop() > settings.in && $(window).scrollTop() < settings.out) {
 							$this.fadeIn(settings.on);
 						}
 						else {
@@ -116,7 +118,7 @@
 
 					$(window).scroll(function() {
 
-						if ($(window).scrollTop() > settings.y) {
+						if ($(window).scrollTop() > settings.in && $(window).scrollTop() < settings.out) {
 							$this.fadeIn(settings.on);
 						}
 						else {
@@ -133,7 +135,7 @@
 
 					$(window).scroll(function() {
 
-						if ($(window).scrollTop() > settings.y) {
+						if ($(window).scrollTop() > settings.in && $(window).scrollTop() < settings.out) {
 							$this.fadeIn(settings.on);
 						}
 						else {
@@ -150,7 +152,7 @@
 
 					$(window).scroll(function() {
 
-						if ($(window).scrollTop() > settings.y) {
+						if ($(window).scrollTop() > settings.in && $(window).scrollTop() < settings.out) {
 							$this.show(settings.on);
 						}
 						else {
@@ -167,7 +169,7 @@
 
 					$(window).scroll(function() {
 
-						if ($(window).scrollTop() > settings.y) {
+						if ($(window).scrollTop() > settings.in && $(window).scrollTop() < settings.out) {
 							$this.show(settings.on);
 						}
 						else {
@@ -184,7 +186,7 @@
 
 					$(window).scroll(function() {
 
-						if ($(window).scrollTop() > settings.y) {
+						if ($(window).scrollTop() > settings.in && $(window).scrollTop() < settings.out) {
 							$this.show(settings.on);
 						}
 						else {
